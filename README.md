@@ -1,2 +1,2 @@
 # project_2
-Project 2. Juan, Noah and Sergio
+Project 2. Juan,Jossue, Noah and Sergio
