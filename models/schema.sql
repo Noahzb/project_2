@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS vroom_db;
+DROP DATABASE IF EXISTS vroom;
 
-CREATE DATABASE vroom_db;
+CREATE DATABASE vroom;
 
 -- Use database
-USE vroom_db;
+USE vroom;
 
 -- Create table
 CREATE TABLE user(
