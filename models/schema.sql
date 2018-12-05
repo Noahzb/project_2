@@ -23,7 +23,3 @@ VALUES ("Josue");
 
 INSERT INTO user (name)
 VALUES ("Noah");
- 
- 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
