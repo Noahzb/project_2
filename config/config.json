@@ -2,7 +2,11 @@
   "development": {
     "username": "root",
     "password": "root",
+<<<<<<< HEAD
     "database": "VROOM",
+=======
+    "database": "vroom",
+>>>>>>> 51ddd05d972d530884b7bcbc2aa15a8f4764df8d
     "host": "localhost",
     "dialect": "mysql"
   },
