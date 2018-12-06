@@ -11,3 +11,7 @@ Project 2 Members:
 ## Back end: 
 
 Juan, Sergio, Noah
+
+## Group Manager
+
+Noah
