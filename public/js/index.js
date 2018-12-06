@@ -3,7 +3,12 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+var example = {
+  text: $exampleText.val().trim(),
+  description: $exampleDescription.val().trim()
+};
 
+var queryurl = "https://www.google.com/maps/embed/v1/directions?origin=edgewater%20florida&destination=daytona%20beach&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk"
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -78,8 +83,6 @@ var handleFormSubmit = function(event) {
     refreshExamples();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -95,5 +98,26 @@ var handleDeleteBtnClick = function() {
 };
 
 // Add event listeners to the submit and delete buttons
+function showDiv() {
+  
+  var exampleT = $exampleText.val().trim()
+  var exampleD = $exampleDescription.val().trim()
+  var q1="<div id='mapdiv'>"+'<iframe width="600" height="450" frameborder="0" style="border:0"'
+  var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
+  var q3=exampleT
+  var q4='&destination='
+  var q5=exampleD
+  var q6='&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk'+'"'
+  var q7="allowfullscreen></iframe></div>"
+  var querydiv = q1+q2+q3+q4+q5+q6+q7
+  document.write(querydiv)
+  console.log("mapboi success")
+  console.log(exampleT)
+  console.log(example.description)
+  console.log(querydiv)
+}
 $submitBtn.on("click", handleFormSubmit);
+$submitBtn.on("click", showDiv);
+
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
