@@ -110,7 +110,10 @@ function showDiv() {
   var q6='&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk'+'"'
   var q7="allowfullscreen></iframe></div>"
   var querydiv = q1+q2+q3+q4+q5+q6+q7
-  document.write(querydiv)
+  var child = document.createElement('div');
+  child.innerHTML = querydiv;
+  child = child.firstChild;
+  document.getElementById('test').appendChild(child);
   console.log("mapboi success")
   console.log(exampleT)
   console.log(example.description)
