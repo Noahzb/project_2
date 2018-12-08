@@ -17,8 +17,22 @@
   </div>
 </div>
 
-
-
+        <form class="clearfix mb-4" action="POST">
+          <div class="invisible">
+          <div class="form-group">
+            
+            <label for="example-text">Input start of trail!</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+          </div>
+          <div class="form-group">
+            <label for="example-description">Input end of trail!</label>
+            <input type="text" id="example-description" class="form-control" aria-describedby="example-description" placeholder="Enter Example Description">
+          </div>
+         
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+          </div>
+        </form>
+       
 
 
 
@@ -33,7 +47,7 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
+            <a href="example/{{this.id}}">{{this.text}} to {{this.description}}</a>
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
@@ -43,13 +57,6 @@
   </div>
 </div>
 <div id="test"></div>
-
-
-
-
-
-
-
 
 
 
