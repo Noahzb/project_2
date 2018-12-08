@@ -27,6 +27,11 @@ module.exports = function(app) {
     res.render(path.join(__dirname, "../views/input.handlebars"));
   });
 
+  app.get("/newpage", function(req, res) {
+    res.render(path.join(__dirname, "../views/newpage.handlebars"));
+  });
+
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
