@@ -3,8 +3,10 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $submitBtn2 = $("#submit2");
+var $submitBtn3 = $("#submit3");
 var $exampleList = $("#example-list");
 var $showBtn = $("#show-button");
+var $showBtn2= $("#show-button2")
 
 var example = {
   text: $exampleText.val().trim(),
@@ -117,12 +119,40 @@ function showDiv() {
   child = child.firstChild;
   document.getElementById('test2').appendChild(child);
   console.log("mapboi success")
+  alert("show div function completed")
   console.log(exampleT)
   console.log(example.description)
   console.log(querydiv)
 }
 $submitBtn2.on("click", handleFormSubmit);
 $submitBtn2.on("click", showDiv);
-
+$showBtn.on("click", showDiv);
+$showBtn2.on("click",showDiv2);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+
+function showDiv2() {
+  
+  var exampleT = $exampleText.val().trim()
+  var exampleD = $exampleDescription.val().trim()
+  var q1="<div id='mapdiv'>"+'<iframe width="600" height="450" frameborder="0" style="border:0"'
+  var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
+  var q3=exampleT
+  var q4='&destination='
+  var q5=exampleD
+  var q6='&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk'+'"'
+  var q7="allowfullscreen></iframe></div>"
+  var querydiv = q1+q2+q3+q4+q5+q6+q7
+  var child = document.createElement('div');
+  child.innerHTML = querydiv;
+  child = child.firstChild;
+  document.getElementById('test2').appendChild(child);
+  console.log("mapboi success")
+  alert("show div function completed")
+  console.log(exampleT)
+  console.log(example.description)
+  console.log(querydiv)
+}
+
+
 
