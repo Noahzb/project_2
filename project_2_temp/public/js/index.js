@@ -2,7 +2,10 @@
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
+var $submitBtn2 = $("#submit2");
 var $exampleList = $("#example-list");
+var $showBtn = $("#show-button");
+
 var example = {
   text: $exampleText.val().trim(),
   description: $exampleDescription.val().trim()
@@ -49,7 +52,6 @@ var refreshExamples = function() {
           "data-id": example.id
         })
         .append($a);
-
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
         .text("ｘ");
@@ -82,7 +84,7 @@ var handleFormSubmit = function(event) {
   API.saveExample(example).then(function() {
     refreshExamples();
   });
-
+alert("input accepted!")
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -113,14 +115,14 @@ function showDiv() {
   var child = document.createElement('div');
   child.innerHTML = querydiv;
   child = child.firstChild;
-  document.getElementById('test').appendChild(child);
+  document.getElementById('test2').appendChild(child);
   console.log("mapboi success")
   console.log(exampleT)
   console.log(example.description)
   console.log(querydiv)
 }
-$submitBtn.on("click", handleFormSubmit);
-$submitBtn.on("click", showDiv);
+$submitBtn2.on("click", handleFormSubmit);
+$submitBtn2.on("click", showDiv);
 
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
