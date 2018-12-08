@@ -38,7 +38,12 @@ section {
 }
 
 #home {
-	background: white;
+	background-image: URL("../assets/images/Nurburgring.jpg");
+	background-repeat: no-repeat;
+	height: 65%;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #discover {
