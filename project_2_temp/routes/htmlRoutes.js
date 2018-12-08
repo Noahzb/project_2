@@ -27,6 +27,14 @@ module.exports = function(app) {
     res.render(path.join(__dirname, "../views/input.handlebars"));
   });
 
+<<<<<<< HEAD:project_2_temp/routes/htmlRoutes.js
+=======
+  app.get("/newpage", function(req, res) {
+    res.render(path.join(__dirname, "../views/newpage.handlebars"));
+  });
+
+
+>>>>>>> 6a55c021c02480e876965037cf029fbf46d740c5:routes/htmlRoutes.js
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
