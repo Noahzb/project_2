@@ -2,16 +2,102 @@
   line-height: 2.5;
 }
 
-.btn{
-  margin-top: 8px;
+
+
+
+
+body {
+	margin: 0;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+nav {
+	--width: 130px;
+	--height: 40px;
+	position: fixed;
+	top: 20px;
+	left: calc(50% - var(--width) / 2);
+	display: grid;
+	width: var(--width);
+	grid: var(--height) / auto-flow;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: calc(var(--height) / 2);
+	font: 500 15px -apple-system, BlinkMacSystemFont, sans-serif;
+	background: white;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
 }
+
+nav a {
+	color: #2DBAE7;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+section {
+	height: 100vh
+}
+
+#home {
+	background: white;
+}
+
+#discover {
+	background: #062f4f;
+
+}
+
+
+.title {
+
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+}
+
+.search {
+
+	animation-duration: 3s;
+	animation-delay: -1s;
+	animation-iteration-count: 1;
+}
+
+
+#map {
+	height: 80%;
+	width: 100%;
+	/* border-style: double; */
+	/* border-width: 5px; */
+	padding: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal {
+	background: rgba(0, 0, 0, 0.4);
+
+}
+
+.fade.active {
+	opacity: 1;
+
+}
+
+.modal-dialog {
+	margin-top: 5%;
+
+	width: 100%
+}
+
+.sign-in {
+	margin-bottom: 5%;
+	/* margin-right: 5%; */
+	margin-left: 85%;
+}
+
+

@@ -1,34 +1,315 @@
-<div class="bg-danger">
-  <div class="row">
-    <div class="col-md-4">
-      <button type="button" class="btn btn-primary">Primary</button>
-    </div>
-    <div class="col-md-4">
-      <div class="header font-weight-bold">
-        <h1 class="text-center">Just Drive</h1>
-      </div>
-    </div>
+ <!-- nav section links -->
+    <nav class="animated heartBeat delay-1s">
+        <a href="#home">Home</a>
+        <a href="#discover">Discover</a>
+    </nav>
 
-    <div class="col-md-4">
-      <button type="button" class="btn btn-primary float-right">Primary</button>
-    </div>
-  </div>
-</div>
+    <!-- home -->
+    <section id="home">
+        <table style="height: 100%; width:100%;">
+            <tbody>
+                <tr>
+                    <td class="title align-middle text-center">
+                        <h1 class="animated fadeIn delay-0s">Just Drive.</h1>
+                        <p class="animated fadeIn">The place to discover new exciting roads to drive.</p>
+                        <p class="animated fadeIn">Just for fun.</p>
+                        <br>
+
+                        <form class="search animated lightSpeedIn">
+
+                            <div class="form-row justify-content-center">
+                                <div class="col-3">
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" class="form-control" placeholder="State">
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" class="form-control" placeholder="Zip">
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <br>
+                        <button type="button" class="btn btn-primary btn-sm animated fadeIn">Search</button>
+                        <br>
+                        <br>
+                        <p class="animated fadeIn">Just drive...safe!</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <!-- section with cards, roads, maps. -->
+
+    <section id="discover">
+        <table style="height: 100%; width:100%;">
+            <tbody>
+                <tr>
+                    <td class="title align-middle">
+
+                        <!-- sign in button -->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="sign-in btn btn-primary btn-sm" data-toggle="modal" data-target="#signInButton">
+                            Sign in
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade active" id="signInButton" tabindex="-1" role="dialog" aria-labelledby="signInButtonLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="signInButtonlLabel">Sign In</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+
+
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="inputPassword3"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
 
 
 
 
+                        <!-- road cards -->
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-auto">
+
+                                <div class="container">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="./assets/images/Motorcycle_2466.png" alt="Card image cap">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Florida Black Bear Scenic Byway</h5>
+                                            <p class="card-text">Connecting Silver Springs with the city of Ormond
+                                                Beach, the Florida Black Bear Scenic Byway is filled with long,
+                                                undisturbed stretches of natural Florida and pine-scented air.</p>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary btn-sm" id="google-map" data-toggle="modal"
+                                                data-target="#road-Card">
+                                                Map
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade active" id="road-Card" tabindex="-1" role="dialog"
+                                                aria-labelledby="label1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="label1">Florida
+                                                                Black Bear Scenic Byway</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <!-- modal content goes here -->
+
+                                                            <div id="map"></div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted">Posted by: User.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-<div id="home">
+                            <div class="col-md-auto">
+                                <div class="container">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="./assets/images/os-photos-cr-455-green-mountain-scenic-byway-20140612.jpg"
+                                            alt="Card image cap">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Green Mountain Scenic Byway</h5>
+                                            <p class="card-text">The Green Mountain Scenic Byway starts from
+                                                Howey-In-The-Hills to Winter Garden and is a microcosm of Florida -
+                                                rolling hills, small towns, rural communities, and stately and historic
+                                                buildings with moss-draped live oaks shading the roadway.</p>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary btn-sm" id="google-map2" data-toggle="modal"
+                                                data-target="#road-Card">
+                                                Map
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade active" id="road-Card" tabindex="-1" role="dialog"
+                                                aria-labelledby="label2" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="label2">Green
+                                                                Mountain Scenic Bywayy</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="modal-body" >
+                                                            <!-- modal content goes here -->
+
+                                                            <div id="map"></div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted">Posted by: User.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-auto">
+
+                                <div class="container">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="./assets/images/VFBIGBENDBYWAY112415CH24-300x200.jpg"
+                                            alt="Card image cap">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Bend Scenic Byway</h5>
+                                            <p class="card-text">The Big Bend Scenic Byway is made up of two
+                                                outstanding corridors, the Forest Trail and the Coastal Trail. Back in
+                                                the 1800s the Forest Trail was truly the “Wild West,” with cowboys,
+                                                rustlers, Indians, trappers, and hard-scrabble farmers.</p>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary btn-sm" id="google-map3" data-toggle="modal"
+                                                data-target="#road-Card">
+                                                Map
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade active" id="road-Card" tabindex="-1" role="dialog"
+                                                aria-labelledby="label3" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="label3">Big Bend
+                                                                Scenic Byway</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <!-- modal content goes here -->
+
+                                                            <div id="map"></div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted">Posted by: User.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- </div> -->
+    <script type="text/javascript" src="./app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk&callback=initMap">
+    </script>
+
+
+
+{{!-- <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
         <a href="/input">PSJADJASDLASJ</a>
-        <h2>This is our Home Page!</h2>
+        <h2>This is our Home Page!</h2> --}}
 
-        <h3>Examples:</h3>
+        {{!-- <h3>Examples:</h3>
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
@@ -41,22 +322,13 @@
     </div>
   </div>
 </div>
-<div id="test"></div>
+<div id="test"></div> --}}
 
 
 
 
 
 
-
-
-
-
-
-
-<div class="footer bg-danger">
-  <p>Footer</p>
-</div>
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
