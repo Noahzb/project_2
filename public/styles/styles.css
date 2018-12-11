@@ -34,17 +34,23 @@ nav a {
 }
 
 section {
-	height: 100vh
+	height: 150vh
 }
 
 #home {
-	background-image: URL("../assets/images/Nurburgring.jpg");
-	background-repeat: no-repeat;
-	height: 65%;
-	width: 65%;
-	margin-left: auto;
-	margin-right: auto;
+	
+
 }
+
+.background {
+  background-image: URL("../assets/images/interchange.jpeg");
+  margin-left: auto;
+  background-position: center;
+  height: 50%;
+  z-index: 99999 !important;
+}
+
+
 
 #discover {
 	background: #062f4f;
