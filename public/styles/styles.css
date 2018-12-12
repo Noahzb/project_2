@@ -6,11 +6,28 @@
 
 
 
-body {
-	margin: 0;
-	max-width: 100%;
-	overflow-x: hidden;
+body, html {
+	height: 100%;
 }
+
+.parallax {
+	
+
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.p-1 {
+	background-image: url("../assets/images/interchange.jpeg");
+}
+
+.p-2 {
+	background-image: url("../assets/images/Mountain-Road-4k-wallpaper.jpeg");
+}
+
 
 nav {
 	--width: 130px;
@@ -39,26 +56,18 @@ section {
 	height: 150vh
 }
 
-#home {
-	
-
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-.background {
+/* .background {
   background-image: URL("../assets/images/interchange.jpeg");
   margin-left: auto;
   background-position: center;
   height: 50%;
   z-index: 99999 !important;
-}
-
-.scrolling-wrapper {
-	overflow-x: scroll;
-	overflow-y: hidden;
-	white-space: nowrap;
-
-
-}
+} */
 
 
 
