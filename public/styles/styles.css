@@ -8,6 +8,8 @@
 
 body {
 	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 nav {
@@ -48,6 +50,14 @@ section {
   background-position: center;
   height: 50%;
   z-index: 99999 !important;
+}
+
+.scrolling-wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+
 }
 
 
