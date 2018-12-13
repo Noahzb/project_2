@@ -12,6 +12,25 @@ body {
 	
 }
 
+.parallax {
+	
+
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.p-1 {
+	background-image: url("../assets/images/interchange.jpeg");
+}
+
+.p-2 {
+	background-image: url("../assets/images/Mountain-Road-4k-wallpaper.jpeg");
+}
+
+
 nav {
 	--width: 130px;
 	--height: 40px;
@@ -39,7 +58,7 @@ section {
 	height: 150vh
 }
 
-#home {}
+/* #home {} */
 
 .background {
 	background-image: URL("../assets/images/interchange.jpeg");
