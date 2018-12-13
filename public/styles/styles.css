@@ -1,13 +1,15 @@
 .list-group-item {
-  line-height: 2.5;
+	line-height: 2.5;
 }
 
 
-
+html { height: 100% }
 
 
 body {
+	height: 100%;
 	margin: 0;
+	
 }
 
 nav {
@@ -37,29 +39,30 @@ section {
 	height: 150vh
 }
 
-#home {
-	
-
-}
+#home {}
 
 .background {
-  background-image: URL("../assets/images/interchange.jpeg");
-  margin-left: auto;
-  background-position: center;
-  height: 50%;
-  z-index: 99999 !important;
+	background-image: URL("../assets/images/interchange.jpeg");
+	margin-left: auto;
+	background-position: center;
+	height: 50%;
+	z-index: 99999 !important;
+}
+
+.buffer {
+	margin-top: 18%;
 }
 
 
 
 #discover {
-	background: #062f4f;
-
+	background: white;
+	height: 100%;
 }
 
 
 .title {
-
+	border-top: 30;
 	animation-duration: 5s;
 	animation-delay: 2s;
 	animation-iteration-count: 1;
@@ -81,16 +84,29 @@ section {
 	padding: 50%;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
-.container {
+#mapDiv {
+	height: 80%;
+	width: 60%;
+	/* border-style: double; */
+	/* border-width: 5px; */
+	padding: 50%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
+
+/* .container {
+	background-color: #485167;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+} */
 
 .modal {
 	background: rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -101,8 +117,11 @@ section {
 
 .modal-dialog {
 	margin-top: 5%;
-
 	width: 100%
+}
+
+.modal-body {
+	overflow-y: auto;
 }
 
 .sign-in {
@@ -110,5 +129,3 @@ section {
 	/* margin-right: 5%; */
 	margin-left: 85%;
 }
-
-
