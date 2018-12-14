@@ -1,0 +1,91 @@
+
+
+<section id="discover">
+
+
+  <div class="background">
+    <table style="height: 100%; width:100%;">
+      <tbody>
+        <tr>
+          <div class="buffer">
+            <td class="title align-middle text-center text-light">
+              <h1 class="animated fadeIn delay-0s">Just Drive.</h1>
+              <p class="animated fadeIn">The place to discover new exciting roads to drive.</p>
+              <p class="animated fadeIn">Just for fun.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+              <form class="animated lightSpeedIn" action="POST">
+
+                <div class="form-row justify-content-center">
+                  <div class="col-md-auto">
+                    <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                      placeholder="origin">
+                  </div>
+                  <div class="col-md-auto">
+                    <input type="text" id="example-description" class="form-control" aria-describedby="example-description"
+                      placeholder="Destination">
+                  </div>
+                </div>
+
+
+                {{!-- <button id="submit2" class="btn btn-primary float-right">Submit</button> --}}
+              </form>
+              <br>
+
+              <button id="submit2" class="btn btn-primary btn-sm animated fadeIn" data-toggle="modal" data-target="#road-Card">
+                Search
+              </button>
+
+              <!-- Button trigger modal -->
+
+              <!-- Modal -->
+              <div class="modal fade active" id="road-Card" tabindex="-1" role="dialog" aria-labelledby="label2"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="label2">Route</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <!-- modal content goes here -->
+
+                      <div calss="google-map" id="test2"></div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              {{!-- <p class="animated fadeIn">Just drive...</p> --}}
+
+            </td>
+          </div>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="backContainer" class="animated fadeIn delay-0s">
+<a href="/" class="back">← Back To Home</a>
+</div>
+
+</section>
+
+
+
+<div id="test2"></div>
+<script src="/js/index.js"></script>

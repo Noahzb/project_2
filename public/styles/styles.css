@@ -1,0 +1,203 @@
+.list-group-item {
+	line-height: 2.5;
+}
+
+
+body,
+html {
+	height: 100%;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.233);
+	background: url("../assets/images/gravel.png");
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.justDrive {
+	background-color: #313131;
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+	text-shadow: -1px 0 rgb(167, 13, 13), 0 1px rgb(167, 13, 13), 1px 0 rgb(167, 13, 13), 0 -1px rgb(167, 13, 13);
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 0%;
+}
+
+.p-1 {
+	height: 50%;
+	background-image: url("../assets/images/interchange.jpeg");
+}
+
+.p-2 {
+	height: 100%;
+	background-image: url("../assets/images/Mountain-Road-4k-wallpaper.jpeg");
+}
+
+
+nav {
+	--width: 200px;
+	--height: 40px;
+	position: fixed;
+	top: 20px;
+	left: calc(50% - var(--width) / 2);
+	display: grid;
+	width: var(--width);
+	grid: var(--height) / auto-flow;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: calc(var(--height) / 2);
+	font: 500 15px -apple-system, BlinkMacSystemFont, 'Ubuntu', sans-serif;
+	background: #a10115;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+	text-align: center;
+
+}
+
+nav a {
+	color: #ffffff;
+	font-size: 17px;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+nav a:hover {
+	color: rgb(248, 248, 248);
+	font-size: 20px;
+}
+
+section {
+	height: 150vh
+}
+
+/* #home {} */
+
+/* .background {
+	background-image: URL("../assets/images/interchange.jpeg");
+	margin-left: auto;
+	background-position: center;
+	height: 50%;
+	z-index: 99999 !important;
+} */
+
+.buffer {
+	margin-top: 10px;
+}
+
+
+.title {
+	border-top: 30;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+}
+
+.search {
+
+	animation-duration: 3s;
+	animation-delay: -1s;
+	animation-iteration-count: 1;
+}
+
+
+#map {
+	height: 80%;
+	width: 100%;
+	/* border-style: double; */
+	/* border-width: 5px; */
+	padding: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mapDiv {
+	height: 80%;
+	width: 60%;
+	/* border-style: double; */
+	/* border-width: 5px; */
+	padding: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/* .container {
+	background-color: #485167;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+} */
+
+.modal {
+	background: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.fade.active {
+	opacity: 1;
+
+}
+
+.modal-dialog {
+	margin-top: 5%;
+	width: 100%
+}
+
+.modal-body {
+	overflow-y: auto;
+}
+
+.sign-in {
+	margin-bottom: 5%;
+	/* margin-right: 5%; */
+	margin-left: 85%;
+}
+
+/* input page */
+.back {
+	--width: 100px;
+	--height: 40px;
+	position: relative;
+	top: 300px;
+	left: calc(50% - var(--width) / 2);
+	display: grid;
+	width: var(--width);
+	grid: var(--height) / auto-flow;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: calc(var(--height) / 2);
+	font: 500 15px -apple-system, BlinkMacSystemFont, 'Ubuntu', sans-serif;
+	color: white;
+	background: #a10115;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+	text-align: center;
+}
+
+.back:hover{
+	color: rgb(248, 248, 248);
+	font-size: 17px;
+}
+
+
+#discover {
+	/* background: #062f4fc2; */
+	font-family: 'Orbitron', sans-serif;
+	height: 800px;
+}
+#inputbg{
+
+	margin-top: 10px;
+}
+
+#backContainer {
+
+	height: 85px;
+	float: left;
+}

@@ -86,7 +86,7 @@ var handleFormSubmit = function(event) {
   API.saveExample(example).then(function() {
     refreshExamples();
   });
-alert("input accepted!")
+
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -106,7 +106,7 @@ function showDiv() {
   
   var exampleT = $exampleText.val().trim()
   var exampleD = $exampleDescription.val().trim()
-  var q1="<div id='mapdiv'>"+'<iframe width="600" height="450" frameborder="0" style="border:0"'
+  var q1="<div id='mapdiv'>"+'<iframe width="466" height="456" frameborder="0" style="border:0"'
   var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
   var q3=exampleT
   var q4='&destination='
@@ -119,7 +119,7 @@ function showDiv() {
   child = child.firstChild;
   document.getElementById('test2').appendChild(child);
   console.log("mapboi success")
-  alert("show div function completed")
+
   console.log(exampleT)
   console.log(example.description)
   console.log(querydiv)
@@ -129,13 +129,13 @@ $submitBtn2.on("click", showDiv);
 $showBtn.on("click", showDiv);
 $showBtn2.on("click",showDiv2);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
-
+console.log(showDiv)
 
 function showDiv2() {
   
   var exampleT = $exampleText.val().trim()
   var exampleD = $exampleDescription.val().trim()
-  var q1="<div id='mapdiv'>"+'<iframe width="600" height="450" frameborder="0" style="border:0"'
+  var q1="<div id='mapdiv'>"+'<iframe width="466" height="456" frameborder="0" style="border:0"'
   var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
   var q3=exampleT
   var q4='&destination='

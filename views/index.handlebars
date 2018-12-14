@@ -1,0 +1,31 @@
+<!-- nav section links -->
+<nav class="animated heartBeat delay-1s">
+  <a href="/input">Discover New Route</a>
+</nav>
+<!-- home -->
+<br>
+<br>
+<br>
+<!-- home -->
+<section id="home" class="container">
+  <div class="parallax p-1">
+  </div>
+  <h1 class="justDrive" style="text-align:center">Just Drive</h1>
+  <div class="parallax p-2">
+  </div>
+  
+  <table style="height: 30%; width:100%;">
+    <tbody>
+      <tr>
+        <td class="title align-middle">
+
+          <div>
+        <ul id="example-list" class="list-group" style="margin-botton:750px">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+          </div>
