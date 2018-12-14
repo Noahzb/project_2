@@ -7,11 +7,35 @@ var $submitBtn3 = $("#submit3");
 var $exampleList = $("#example-list");
 var $showBtn = $("#show-button");
 var $showBtn2= $("#show-button2")
+var $signInBtn = $("#sign-in-btn");
 
 var example = {
   text: $exampleText.val().trim(),
   description: $exampleDescription.val().trim()
 };
+
+// AUTHENTICATION
+
+var Auth = sql.authenticate()
+    .then(function () {
+        console.log("CONNECTED!");
+    })
+    .catch(function (err) {
+        console.log("NOT CONNCETED!");
+    })
+    .done();
+
+
+
+
+
+
+
+
+
+
+
+
 
 var queryurl = "https://www.google.com/maps/embed/v1/directions?origin=edgewater%20florida&destination=daytona%20beach&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk"
 // The API object contains methods for each kind of request we'll make
