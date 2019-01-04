@@ -1,5 +1,6 @@
 var db = require("../models");
 var path = require("path");
+var isAuthenticated = require("../config/middleware/isAuthenticated")
 
 module.exports = function(app) {
   // Load index page
@@ -10,6 +11,14 @@ module.exports = function(app) {
         examples: dbExamples
       });
     });
+  });
+
+  app.get("/", function(req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/members");
+    }
+    res.render(path.join(__dirname, "../views/signup.handlebars"));
   });
 
 
@@ -23,8 +32,20 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/input", function(req, res) {
-    res.render(path.join(__dirname, "../views/input.handlebars"));
+  app.get("/login", function(req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/members");
+    }
+    res.render(path.join(__dirname, "../views/login.handlebars"));
+  });
+
+  app.get("/signup", function(req, res) {
+    res.render(path.join(__dirname, "../views/signup.handlebars"));
+  });
+
+  app.get("/members", isAuthenticated, function(req, res) {
+    res.render(path.join(__dirname, "../views/members.handlebars"));
   });
 
   // Render 404 page for any unmatched routes

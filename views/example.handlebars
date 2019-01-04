@@ -1,33 +1,39 @@
-            <a href="/">← Back To Home</a>
+  {{>navbar/navbar-block}}
+<a href="/">← Back To Home</a>
 
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
       <div class="card mt-4">
-       <div class="form-group">
-         <div class="invisible">
+        <div class="form-group">
+          <div class="invisible">
             <label for="example-text">origin</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder={{example.text}} value={{example.text}}>
-          
-          <div class="form-group">
-            <label for="example-description">endpoint</label>
-            <input type="text" id="example-description" class="form-control" aria-describedby="example-description" placeholder={{example.description}} value={{example.description}}>
-         </div>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder={{example.text}}
+              value={{example.text}}>
+
+            <div class="form-group">
+              <label for="example-description">endpoint</label>
+              <input type="text" id="example-description" class="form-control" aria-describedby="example-description"
+                placeholder={{example.description}} value={{example.description}}>
+            </div>
           </div>
-        </form>
-        <div id="test2"></div>
-        <script src="/js/index.js"></script>
-          <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Startpoint</strong>: {{example.text}}</p>
-          <p>
-            <strong>Endpoint</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
-            <button id="show-button2">show</button>
-            
+          </form>
+          <div id="test2"></div>
+          <div id="exampleContainer">
+            <script src="/js/index.js"></script>
+            <h5 class="card-title">Example</h5>
+            <p>
+              <strong>ID</strong>: {{example.id}}</p>
+            <p>
+              <p>
+                <strong>Startpoint:</strong> {{example.text}}</p>
+              <p>
+                <strong>Endpoint:</strong> {{example.description}}</p>
+
+              <a href="/">← Back To Home</a>
+              <button id="show-button2">Display Map</button>
+          </div>
+
         </div>
       </div>
     </div>

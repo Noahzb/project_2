@@ -133,7 +133,7 @@ console.log(showDiv)
 
 function showDiv2() {
   
-  var exampleT = $exampleText.val().trim()
+  var exampleT = $exampleText.val().trim();
   var exampleD = $exampleDescription.val().trim()
   var q1="<div id='mapdiv'>"+'<iframe width="466" height="456" frameborder="0" style="border:0"'
   var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
@@ -148,7 +148,7 @@ function showDiv2() {
   child = child.firstChild;
   document.getElementById('test2').appendChild(child);
   console.log("mapboi success")
-  alert("show div function completed")
+  alert("Map Success!")
   console.log(exampleT)
   console.log(example.description)
   console.log(querydiv)
