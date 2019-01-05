@@ -1,29 +1,53 @@
+<div="login">
+  <nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1">
+      <a class="smallLogo" href="/">Just Drive</a>
+    </span>
+    <a class="button_four animated heartBeat delay-0s" href="/discover">Discover New Route</a>
 
-{{> navbar/navbar-block}}
+    {{!-- <nav id="new" class="animated heartBeat delay-1s">
+      <a href="/input">Discover New Route</a>
+    </nav> --}}
 
-<br>
-<br>
-<br>
-<!-- home -->
-<section id="home" class="container">
-  {{!-- <div class="parallax p-1">
-  </div> --}}
-  <h1 class="justDrive" style="text-align:center">Just Drive</h1>
-  <div class="parallax p-2">
+    <div id="navlist">
+      <a id="button_three" href="/login">
+        Sign In
+      </a>
+
+    </div>
+    </div>
+    </div>
+  </nav>
   </div>
-  <h1 class="justDrive" style="text-align:center">Discover New Route</h1>
 
-  <table style="height: 30%; width:100%;">
-    <tbody>
-      <tr>
-        <td class="title align-middle">
 
-          <div id="routeDisplay">
-            <ul id="example-list" class="list-group" style="margin-botton:750px">
-              {{#each examples}}
-              <li data-id="{{this.id}}" class="list-group-item">
-                <a href="example/{{this.id}}">{{this.text}} to {{this.description}}</a>
-              </li>
-              {{/each}}
-            </ul>
-          </div>
+
+  <br>
+  <br>
+  <br>
+  <!-- home -->
+  <section id="home" class="container">
+
+    <h1 class="justDrive" style="text-align:center">Just Drive</h1>
+    <div class="parallax p-1">
+    </div>
+
+    <h1 class="justDrive" style="text-align:center">Discover New Route</h1>
+
+    <table style="height: 30%; width:100%;">
+      <tbody>
+        <tr>
+          <td class="title align-middle">
+
+            <div id="routeDisplay">
+              <ul id="example-list" class="list-group" style="margin-botton:750px">
+                {{#each examples}}
+                <li data-id="{{this.id}}" class="list-group-item">
+                  <a href="example/{{this.id}}">{{this.text}} to {{this.description}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+
+            {{!-- <div class="parallax p-2">
+            </div> --}}
