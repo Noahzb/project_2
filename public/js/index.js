@@ -13,7 +13,7 @@ var example = {
   description: $exampleDescription.val().trim()
 };
 
-var queryurl = "https://www.google.com/maps/embed/v1/directions?origin=edgewater%20florida&destination=daytona%20beach&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk"
+var queryurl = "https://www.google.com/maps/embed/v1/directions?origin=edgewater%20florida&destination=daytona%20beach&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk";
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -101,57 +101,18 @@ var handleDeleteBtnClick = function() {
   });
 };
 
-// Add event listeners to the submit and delete buttons
-function showDiv() {
-  
-  var exampleT = $exampleText.val().trim()
-  var exampleD = $exampleDescription.val().trim()
-  var q1="<div id='mapdiv'>"+'<iframe width="466" height="456" frameborder="0" style="border:0"'
-  var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
-  var q3=exampleT
-  var q4='&destination='
-  var q5=exampleD
-  var q6='&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk'+'"'
-  var q7="allowfullscreen></iframe></div>"
-  var querydiv = q1+q2+q3+q4+q5+q6+q7
-  var child = document.createElement('div');
-  child.innerHTML = querydiv;
-  child = child.firstChild;
-  document.getElementById('test2').appendChild(child);
-  console.log("mapboi success")
-
-  console.log(exampleT)
-  console.log(example.description)
-  console.log(querydiv)
-}
 $submitBtn2.on("click", handleFormSubmit);
 $submitBtn2.on("click", showDiv);
 $showBtn.on("click", showDiv);
-$showBtn2.on("click",showDiv2);
+$showBtn2.on("click",showDiv);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 console.log(showDiv)
 
-function showDiv2() {
-  
+function showDiv() {
   var exampleT = $exampleText.val().trim();
   var exampleD = $exampleDescription.val().trim()
-  var q1="<div id='mapdiv'>"+'<iframe width="466" height="456" frameborder="0" style="border:0"'
-  var q2='src="https://www.google.com/maps/embed/v1/directions?origin='
-  var q3=exampleT
-  var q4='&destination='
-  var q5=exampleD
-  var q6='&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk'+'"'
-  var q7="allowfullscreen></iframe></div>"
-  var querydiv = q1+q2+q3+q4+q5+q6+q7
-  var child = document.createElement('div');
-  child.innerHTML = querydiv;
-  child = child.firstChild;
-  document.getElementById('test2').appendChild(child);
-  console.log("mapboi success")
-  alert("Map Success!")
-  console.log(exampleT)
-  console.log(example.description)
-  console.log(querydiv)
+  var querydiv = '<div id="mapdiv"><iframe width="466" height="456" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=' + exampleT + '&destination=' + exampleD + '&key=AIzaSyCOklIJPFWYtwRMRYl8bX6vitsT78kWXAk"allowfullscreen></iframe></div>';
+  $('#test2').html(querydiv);
 }
 
 

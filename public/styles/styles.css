@@ -26,6 +26,7 @@ html {
 	font-size: 50px;
 	font-weight: bold;
 	margin:auto;
+	padding: 16px;
 }
 
 .navbar-brand{
@@ -92,13 +93,12 @@ li.list-group-item {
 
 li.list-group-item a {
 	text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255), ;
-
 	color: #d8021b;
+	transition: .3s;
 }
 
 .list-group-item a:hover {
-	font-size: 25px;
-	color: rgb(0, 0, 0);
+	color: #b10317;
 	text-decoration: none;
 }
 
@@ -377,7 +377,7 @@ background: #111
 
 #card{
 	margin: auto;
-	height: 710px;
+	min-height: 710px;
 	width: 80%;
 	font-family: 'Orbitron', sans-serif;
 	background: #313131;
@@ -387,5 +387,5 @@ background: #111
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
-	overflow: hidden;
+	padding: 40px 25px;
 };
